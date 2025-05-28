@@ -1,4 +1,43 @@
+:root{
+    --text-color:#FFF;
+    --accent-color-1:#C0B7E8;
+    --accent-color-2:#8176AF;
+    --main-color:#302C42;
+    --butto-text-color:#343045;
+}
+
+
 body{
     background-color: #302C42;
     font-family: "Montserrat", sans-serif;
 }
+
+.container{
+    width: 1278px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+/* header */
+
+
+
+.header-item{
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.header-element{
+    color: var(--butto-text-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.header-items:first-child{
+    color: var(--text-color);
+}
+
