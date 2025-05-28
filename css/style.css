@@ -22,6 +22,22 @@ body{
 
 /* header */
 
+.header-box{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.header-list{
+    display: flex;
+    gap: 42px;
+}
+
 .header-link{
     color: var(--text-color);
     font-size: 12px;
@@ -36,6 +52,12 @@ body{
     font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
+}
+
+.header-items{
+    display: flex;
+    margin-left: auto;
+    gap: 38px;
 }
 
 .header-items :first-child>.header-btn{
