@@ -316,7 +316,7 @@ body{
     line-height: 1.25;
 }
 
-input{
+.join-input{
     color: var(--text-color);
     border-radius: 40px;
     border: 2px solid var(--text-color);
