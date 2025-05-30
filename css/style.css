@@ -72,9 +72,15 @@ body{
     padding-top: 124px;
 }
 
+.hero-box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
 .hero-title{
     width: 456px;
+    margin-bottom: 36px;
     color: var(--text-color);
     font-size: 46px;
     font-weight: 700;
@@ -86,6 +92,7 @@ body{
 }
 
 .hero-text{
+    width: 450px;
     color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
@@ -102,14 +109,31 @@ body{
     line-height: 1.25;
 }
 
-.hero-subtitle{
+/* contact */
+
+.contact{
+    padding-top: 157px;
+}
+
+
+.contact-list{
+    border-radius: 90px 90px;
+    background: radial-gradient(circle, rgba(58, 52, 86, 1) 1%, #211E2E 99%);;
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+}
+
+.contact-img{
+    width: 70px;
+}
+
+.contact-title{
     color: var(--text-color);
     font-size: 24px;
     font-weight: 700;
     line-height: 1.20;
 }
 
-.hero-link{
+.contact-link{
     color: var(--text-color);
     font-size: 14px;
     font-weight: 400;
