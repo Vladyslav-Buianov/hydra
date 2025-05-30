@@ -93,6 +93,7 @@ body{
 
 .hero-text{
     width: 450px;
+    margin-bottom: 66px;
     color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
@@ -157,6 +158,14 @@ body{
     padding-top: 90px;
 }
 
+.vr-item>.vr-title{
+    margin-bottom: 119px;
+}
+
+.vr-item{
+    display: flex;
+    justify-content: space-between;
+}
 
 .vr-title{
     width: 298px;
@@ -166,8 +175,9 @@ body{
     line-height: 1.22;
 }
 
-.vr-subtitle{
+.vr-subject{
     width: 192px;
+    margin-bottom: 42px;
     color: var(--text-color);
     font-size: 36px;
     font-weight: 700;
@@ -179,6 +189,7 @@ body{
 }
 
 .vr-text{
+    width: 652px;
     color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
@@ -187,6 +198,7 @@ body{
 
 .vr-btn{
     padding: 16px 47px 17px 39px;
+    margin-top: 28px;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 1%, #C0B7E8 99%);
     color: var(--button-text-color);
