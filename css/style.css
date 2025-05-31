@@ -212,6 +212,10 @@ body{
     padding-top: 111px;
 }
 
+.why-box{
+    display: flex;
+    justify-content: space-between;
+}
 
 .why-title{
     width: 259px;
@@ -226,33 +230,62 @@ body{
 }
 
 .why-text{
+    width: 652px;
     color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
 }
 
-.why-item{
-    width: 310px;
+/* services */
+
+.services{
+    padding-top: 102px;
 }
 
-.why-subject{
+.services-list{
+    display: flex;
+    gap: 11px;
+}
+
+.services-item{
+    padding: 23px 35px 40px 35px;
+    border-radius: 40px;
+    background: radial-gradient(circle, #433D60 2%, #211E2E 98%);
+    flex-basis: calc((100% - 33px) / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-img{
+   width: 219px; 
+   border-radius: 50%;
+}
+
+.services-subject{
+    margin-top: 39px;
     color: var(--text-color);
     font-size: 24px;
     font-weight: 700;
     line-height: 1.20;
 }
 
-.why-desk{
+.services-desk{
+    margin-top: 39px;
+    width: 250px;
     color: var(--text-color);
     font-size: 12px;
     font-weight: 400;
     line-height: 1.25;
 }
 
-.why-btn{
+.services-btn{
+    margin-top: 35px;
     padding: 16px 39px 17px 39px;
     color: var(--button-text-color);
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
@@ -262,6 +295,11 @@ body{
 
 .tech{
     padding-top: 114px;
+}
+
+.tech-box{
+    display: flex;
+    justify-content: center;
 }
 
 .tech-title{
@@ -274,6 +312,19 @@ body{
 
 .tech-color{
     font-weight: 300;
+}
+
+.tech-list{
+    display: flex;
+    align-items: center;
+}
+
+.tech-list:first-child>.tech-img{
+    margin-right: 91px;
+}
+
+.tech-img{
+    width: 282px;
 }
 
 /* how */
