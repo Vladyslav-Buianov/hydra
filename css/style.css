@@ -122,7 +122,7 @@ body{
     background: radial-gradient(circle,rgba(58, 52, 86, 1) 0%, #211E2E 100%);
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 90px;
 }
 
 .contact-item{
@@ -300,9 +300,11 @@ body{
 .tech-box{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tech-title{
+    margin: 116px 342px 104px 342px;
     width: 577px;
     color: var(--text-color);
     font-size: 36px;
@@ -317,10 +319,22 @@ body{
 .tech-list{
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
-.tech-list:first-child>.tech-img{
+.tech-list :first-child>.tech-img{
+    width: 174px;
     margin-right: 91px;
+}
+
+.tech-list :nth-child(2)>.tech-img{
+    width: 252px;
+    margin-right: 71px;
+}
+
+.tech-list :nth-child(3)>.tech-img{
+    width: 263px;
+    margin-right: 56px;
 }
 
 .tech-img{
