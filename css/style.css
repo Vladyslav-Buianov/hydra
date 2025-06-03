@@ -158,13 +158,17 @@ body{
     padding-top: 90px;
 }
 
-.vr-item>.vr-title{
-    margin-bottom: 119px;
-}
-
 .vr-item{
     display: flex;
     justify-content: space-between;
+}
+
+.vr-list :first-child>.vr-title{
+    margin-bottom: 119px;
+}
+
+.vr-list :nth-child(2)>.vr-wrapper{
+    margin-left: 666px;
 }
 
 .vr-title{
@@ -199,6 +203,7 @@ body{
 .vr-btn{
     padding: 16px 47px 17px 39px;
     margin-top: 28px;
+    margin-left: 666px;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 1%, #C0B7E8 99%);
     color: var(--button-text-color);
@@ -347,8 +352,15 @@ body{
     padding-top: 25px;
 }
 
+.how-box{
+    display: flex;
+    align-items:start;
+    flex-wrap: wrap;
+}
+
 .how-title{
     width: 321px;
+    margin-right: 275px;
     color: var(--text-color);
     font-size: 36px;
     font-weight: 700;
@@ -360,10 +372,31 @@ body{
 }
 
 .how-desk{
+    width: 652px;
     color: var(--text-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
+}
+
+.how-list{
+    margin-top: 342px;
+    display: flex;
+    justify-content: center;
+}
+
+.how-list :first-child>.how-subject{
+    margin-left: 76px;
+    margin-right: 152px;
+}
+
+.how-list :nth-child(2)>.how-subject{
+    margin-right: 184px;
+}
+
+.how-list :nth-child(3)>.how-subject{
+    margin-right: 170px;
+    width: 157px;
 }
 
 .how-subject{
@@ -380,7 +413,16 @@ body{
     padding-top: 112px;
 }
 
+.join-box{
+    padding: 90px 110px 84px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .join-title{
+    margin-bottom: 51px;
     color: var(--text-color);
     font-size: 36px;
     font-weight: 700;
@@ -388,14 +430,72 @@ body{
 }
 
 .join-subtitle{
+    margin-bottom: 65px;
     color: var(--text-color);
     font-size: 36px;
     font-weight: 300;
     line-height: 1.22;
 }
 
+
+
+.join-input{
+    color: var(--text-color);
+    background-color: var(--main-color);
+    width: 524px;
+    height: 72px;
+    padding: 0 42px;
+    border-radius: 40px;
+    outline: 2px solid var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.21;
+}
+
+.join-textarea{
+    color: var(--text-color);
+    background-color: var(--main-color);
+    width: 1058px;
+    height: 210px;
+    padding: 27px 42px;
+    border-radius: 40px;
+    outline: 2px solid var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.21;
+}
+
+.join-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 39px;
+    column-gap: 10px
+}
+
+.join-wrapper{
+    flex-basis: calc((100% - 20px) / 2);
+    padding: 0 110px;
+    display: flex;
+    row-gap: 39px;
+    column-gap: 10px;
+}
+
+.join-wrap :first-child>.join-input{
+    width: 1048px;
+}
+
+.join-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 39px;
+}
+
 .join-btn{
-    padding: 16px 55px 17px 33px;
+    padding: 17px 55px;
+    margin-top: 51px;
+    margin-left: 529px;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     color: var(--button-text-color);
@@ -404,17 +504,22 @@ body{
     line-height: 1.25;
 }
 
-.join-input{
-    color: var(--text-color);
-    border-radius: 40px;
-    border: 2px solid var(--text-color);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.21;
-}
+/* footer */
 
 .footer{
-    padding-top: 127px;
+    padding-top: 130px;
+    padding-bottom: 60px;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 181px;
+}
+
+.footer-logo{
+    width: 185px;
 }
 
 .footer-title{
@@ -424,18 +529,44 @@ body{
     line-height: 1.25;
 }
 
+.footer-list{
+    display: flex;
+}
+
+.footer-list :first-child>.footer-items{
+    margin-right: 211px;
+}
+
+.footer-list :nth-child(2)>.footer-items{
+    margin-right: 140px;
+}
+
+.footer-wrapper{
+    display: flex;
+    
+}
+
 .footer-link{
+    display: inline-block;
     color: var(--text-color);
+    width: 115px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.25;
 }
 
+.footer-img{
+    width: 32px;
+}
+
 .footer-btn{
+    padding: 17px 40px;
     color: #343045;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 1%, #C0B7E8 99%);
 }
 
 .footer-copy{

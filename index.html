@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -74,10 +75,10 @@
                     <div class="vr-wrapper">
                         <h2 id="link1" class="vr-subject">ABOUT <span class="vr-color">HYDRA VR</span></h2>
                         <p class="vr-text">Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.</p>
+                    </div>    
                 </li>
                 </ul>
                     <button class="vr-btn" type="button">LET’S GET IN TOUCH</button>
-                </div>
             </div>
         </section>
         <section class="why">
@@ -136,10 +137,10 @@
             </div>  
         </section>
         <section id="link4" class="how">
-            <div class="container">
+            <div class="container how-box">
                 <h2 class="how-title">HOW WE BUILD <span class="how-color">WITH HYDRA VR?</span></h2>
                 <p class="how-desk">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
-                <ul class="how list">
+                <ul class="how-list">
                     <li class="how-item"><h3 class="how-subject">3D Conception & Design</h3></li>
                     <li class="how-item"><h3 class="how-subject">Interaction Design</h3></li>
                     <li class="how-item"><h3 class="how-subject">VR World User Testing</h3></li>
@@ -148,24 +149,32 @@
             </div>
         </section>
         <section class="join">
-            <div class="container">
+            <div class="container join-box">
                 <h2 class="join-title">JOIN HYDRA</h2>
                 <h3 class="join-subtitle">Let’s Build Your VR Experience</h3>
-                <form>
-                    <input class="join-input" placeholder="First Name" type="text">
-                    <input class="join-input" placeholder="Last Name" type="text">
-                    <input class="join-input" placeholder="Email" type="text">
-                    <input class="join-input" placeholder="Phone Number" type="text">
-                    <input class="join-input" placeholder="Subject" type="text">
-                    <input class="join-input" placeholder="Tell Us Something..." type="text">
+                <form class="join-form">
+                    <ul class="join-list">
+                        <div class="join-wrapper">
+                            <li class="join-item"><input class="join-input" placeholder="First Name" type="text"></li>
+                            <li class="join-item"><input class="join-input" placeholder="Last Name" type="text"></li>
+                        </div>
+                        <div class="join-wrapper">
+                            <li class="join-item"><input class="join-input" placeholder="Email" type="email"></li>
+                            <li class="join-item"><input class="join-input" placeholder="Phone Number" type="tel"></li>
+                        </div>  
+                        <div class="join-wrap">
+                            <li class="join-item"><input class="join-input" placeholder="Subject" type="text"></li>
+                            <li class="join-item"><textarea class="join-textarea" placeholder="Tell Us Something..." name="text"></textarea></li>
+                        </div>
+                    </ul>
                     <button class="join-btn" type="submit">SEND TO HYDRA</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer class="footer-item">
-        <div class="container">
-            <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+    <footer class="footer">
+        <div class="container footer-box">
+            <a class="footer-logo" href="./index.html"><img class="footer-logo" src="./img/logo.png" alt=""></a>
             <ul class="footer-list">
                 <li class="footer-item">
                     <ul class="footer-items">
@@ -177,21 +186,23 @@
                 </li>
                 <li class="footer-item">
                     <ul class="footer-items">
-                        <li class="footer-element"><a class="header-link" href="#">F.A.Q</a></li>
-                        <li class="footer-element"><a class="header-link" href="#">SITEMAP</a></li>
-                        <li class="footer-element"><a class="header-link" href="#">CONDITIONS</a></li>
-                        <li class="footer-element"><a class="header-link" href="#">LICENSES</a></li>
+                        <li class="footer-element"><a class="footer-link" href="#">F.A.Q</a></li>
+                        <li class="footer-element"><a class="footer-link" href="#">SITEMAP</a></li>
+                        <li class="footer-element"><a class="footer-link" href="#">CONDITIONS</a></li>
+                        <li class="footer-element"><a class="footer-link" href="#">LICENSES</a></li>
                     </ul>
                 </li>
                 <li class="footer-item">
                     <h2 class="footer-title">SOCIALIZE WITH HYDRA</h2>
-                <ul>
-                    <li class="footer-element"><a class="header-link" href="https://www.facebook.com/home"><img class="footer-img" src="./img/facebook.png" alt=""></a></li>
-                    <li class="footer-element"><a class="header-link" href="https://x.com/explore"><img class="footer-img" src="./img/twitter.png" alt=""></a></li>
-                    <li class="footer-element"><a class="header-link" href="https://www.linkedin.com"><img class="footer-img" src="./img/linkedin.png" alt=""></a></li>
-                    <li class="footer-element"><a class="header-link" href="www.youtube.com/"><img class="footer-img" src="./img/youtube.png" alt=""></a></li>
-                    <li class="footer-element"><a class="header-link" href="www.instagram.com/"><img class="footer-img" src="./img/instagram.png" alt=""></a></li>
-                    <li class="footer-element"><a class="header-link" href="www.pinterest.com/"><img class="footer-img" src="./img/pinterest.png" alt=""></a></li>
+                <ul class="footer-items">
+                    <div class="footer-wrapper">
+                        <li class="footer-element"><a class="footer-sending" href="https://www.facebook.com/home"><img class="footer-img" src="./img/facebook.png" alt=""></a></li>
+                        <li class="footer-element"><a class="footer-sending" href="https://x.com/explore"><img class="footer-img" src="./img/twitter.png" alt=""></a></li>
+                        <li class="footer-element"><a class="footer-sending" href="https://www.linkedin.com"><img class="footer-img" src="./img/linkedin.png" alt=""></a></li>
+                        <li class="footer-element"><a class="footer-sending" href="www.youtube.com/"><img class="footer-img" src="./img/youtube.png" alt=""></a></li>
+                        <li class="footer-element"><a class="footer-sending" href="www.instagram.com/"><img class="footer-img" src="./img/instagram.png" alt=""></a></li>
+                        <li class="footer-element"><a class="footer-sending" href="www.pinterest.com/"><img class="footer-img" src="./img/pinterest.png" alt=""></a></li>
+                    </div>
                 </ul> 
                 <button class="footer-btn" type="button">BUILD YOUR WORLD</button>
              </li>
