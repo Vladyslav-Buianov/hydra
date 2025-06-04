@@ -14,8 +14,7 @@ body{
 
 .container{
     width: 1278px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 10px;
     margin: 0 auto;
     outline: 1px solid red;
 }
@@ -168,7 +167,7 @@ body{
 }
 
 .vr-list :nth-child(2)>.vr-wrapper{
-    margin-left: 666px;
+    margin-left: 625px;
 }
 
 .vr-title{
@@ -250,10 +249,12 @@ body{
 
 .services-list{
     display: flex;
+    justify-content: center;
     gap: 11px;
 }
 
 .services-item{
+    width: 310px;
     padding: 23px 35px 40px 35px;
     border-radius: 40px;
     background: radial-gradient(circle, #433D60 2%, #211E2E 98%);
@@ -523,6 +524,7 @@ body{
 }
 
 .footer-title{
+    margin-bottom: 39px;
     color: var(--text-color);
     font-size: 16px;
     font-weight: 700;
@@ -531,6 +533,7 @@ body{
 
 .footer-list{
     display: flex;
+    align-items: center;
 }
 
 .footer-list :first-child>.footer-items{
@@ -541,9 +544,15 @@ body{
     margin-right: 140px;
 }
 
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .footer-wrapper{
     display: flex;
-    
+    gap: 20px;
 }
 
 .footer-link{
@@ -560,6 +569,7 @@ body{
 }
 
 .footer-btn{
+    margin-top: 49px;
     padding: 17px 40px;
     color: #343045;
     font-size: 12px;
