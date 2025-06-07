@@ -3,8 +3,9 @@
     --accent-color-1:#C0B7E8;
     --accent-color-2:#8176AF;
     --main-color:#302C42;
-    --button-text-color:#343045;
+    --alternative-text-color:#343045;
     --foto-bg:#A3A3A3;
+    --tech-bg-color: #211E2E;
 }
 
 
@@ -47,7 +48,7 @@ body{
 
 .header-btn{
     padding: 17px 38px 16px 37px;
-    color: var(--button-text-color);
+    color: var(--v-text-color);
     border-radius: 40px;
     font-size: 12px;
     font-weight: 700;
@@ -103,7 +104,7 @@ body{
     padding: 17px 43px 18px 38px;
     background: linear-gradient(90deg, #8176AF 1%, #C0B7E8 99%);
     border-radius: 40px;
-    color: var(--button-text-color);
+    color: var(--alternative-text-color);
     font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
@@ -180,11 +181,14 @@ body{
 
 .intro-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .intro-title{
-    width: 298px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 509px;
     color: var(--text-color);
     font-size: 36px;
     font-weight: 700;
@@ -236,17 +240,6 @@ body{
     line-height: 1.22;
 }
 
-.about-title::after{
-    content: "";
-    display: block;
-    width: 228px;
-    height: 100px;
-    background-image: url(../img/title-arrow.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .about-img{
     width: 524px;
     border-radius: 240px 100px;
@@ -254,7 +247,7 @@ body{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.about-subject{
+.about-title{
     width: 192px;
     margin-bottom: 42px;
     color: var(--text-color);
@@ -281,7 +274,7 @@ body{
     margin: 28px 0 68px ;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 1%, #C0B7E8 99%);
-    color: var(--button-text-color);
+    color: var(--alternative-text-color);
     font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
@@ -298,7 +291,10 @@ body{
 }
 
 .why-title{
-    width: 505px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 503px;
     color: var(--text-color);
     font-size: 36px;
     font-weight: 700;
@@ -307,7 +303,6 @@ body{
 
 .why-title::after{
     content: "";
-    display: block;
     width: 228px;
     height: 100px;
     background-image: url(../img/title-arrow.png);
@@ -377,7 +372,7 @@ body{
 .services-btn{
     margin-top: 35px;
     padding: 16px 39px 17px 39px;
-    color: var(--button-text-color);
+    color: var(--alternative-text-color);
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     font-size: 12px;
@@ -397,8 +392,16 @@ body{
     flex-wrap: wrap;
 }
 
+.tech-wrapper{
+    width: 1278px;
+    border-radius: 160px;
+    background-color: var(--tech-bg-color);
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+    background-image: url(../img/tech-bg.png);
+}
+
 .tech-title{
-    margin: 116px 342px 104px 342px;
+    margin: 108px 358px 96px 358px;
     width: 577px;
     color: var(--text-color);
     font-size: 36px;
@@ -443,13 +446,16 @@ body{
 
 .how-box{
     display: flex;
-    align-items:start;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .how-title{
-    width: 321px;
-    margin-right: 55px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 565px;
+    margin-right: 40px;
     color: var(--text-color);
     font-size: 36px;
     font-weight: 700;
@@ -480,30 +486,67 @@ body{
 }
 
 .how-list{
-    margin-top: 342px;
+    margin-top: 179px;
+    background-image: url(../img/how-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
 }
 
-.how-list :first-child>.how-subject{
+.how-list :first-child>.how-subtitle{
+    margin-left: 57px;
+    margin-right: 115px;
+}
+
+.how-list :nth-child(2)>.how-subtitle{
+    margin-right: 129px;
+}
+
+.how-list :nth-child(3)>.how-subtitle{
+    margin-right: 123px;
+}
+
+.how-item{
+    background-image: url(../img/how-tech-pink-bg.png),url(../img/how-tech-black-bg.png);
+    background-position: center, center;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 159px, 198px;
+}
+
+.how-subtitle{
+    margin: 60px;
+    color: var(--alternative-text-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.21;
+}
+
+.how-items{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.how-items :first-child>.how-subject{
     margin-right: 89px;
 }
 
-.how-list :nth-child(2)>.how-subject{
+.how-items :nth-child(2)>.how-subject{
     margin-right: 121px;
 }
 
-.how-list :nth-child(3)>.how-subject{
+.how-items :nth-child(3)>.how-subject{
     margin-right: 107px;
     width: 157px;
 }
 
-.how-item{
+.how-element{
     display: flex;
     justify-content: center;
 }
 
-.how-item::before{
+.how-element::before{
     content: "";
     display: block;
     width: 67px;
@@ -622,7 +665,7 @@ body{
     margin-left: 529px;
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-    color: var(--button-text-color);
+    color: var(--alternative-text-color);
     font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
@@ -644,6 +687,7 @@ body{
 
 .footer-logo{
     width: 185px;
+    margin-right: 100px;
 }
 
 .footer-title{
@@ -660,28 +704,37 @@ body{
 }
 
 .footer-list :first-child>.footer-items{
-    margin-right: 211px;
+    margin-left: 81px;
+    margin-right: 104px;
 }
 
 .footer-list :nth-child(2)>.footer-items{
-    margin-right: 140px;
+    margin-left: 107px;
+    margin-right: 69px;
 }
 
-.footer-items{
+.footer-item>.footer-title{
+    margin-left: 71px;
+}
+
+.footer-item{
     display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
-.footer-items::before{
+.footer-item::before{
     content: "";
-    display: block;
     width: 6px;
     height: 195px;
     background-image: url(../img/footer-lines.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-wrapper{
@@ -705,7 +758,7 @@ body{
 .footer-btn{
     margin-top: 49px;
     padding: 17px 40px;
-    color: #343045;
+    color: var(--alternative-text-color);
     font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
