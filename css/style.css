@@ -9,7 +9,7 @@
 }
 
 
-body{
+.body{
     background-color: var(--main-color);
     font-family: "Montserrat", sans-serif;
 }
@@ -18,10 +18,13 @@ body{
     width: 1278px;
     padding: 0 10px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
 
 /* header */
+
+.header{
+    padding-top: 50px;
+}
 
 .header-box{
     display: flex;
@@ -34,11 +37,22 @@ body{
     align-items: center;
 }
 
+.header-img{
+    width: 102px;
+}
+
+.header-pic{
+    width: 76px;
+}
+
 .header-list{
-    margin-left: 205px;
-    margin-right: 140px;
+    margin: 0 140px;
     display: flex;
     gap: 42px;
+}
+
+.header-list :nth-child(4){
+    width: 55px;
 }
 
 .header-link{
@@ -50,7 +64,6 @@ body{
 
 .header-items{
     display: flex;
-    margin-left: auto;
     gap: 38px;
 }
 
@@ -148,12 +161,22 @@ body{
     background: radial-gradient(circle,rgba(58, 52, 86, 1) 0%, #211E2E 100%);
     display: flex;
     justify-content: center;
-    gap: 90px;
 }
 
 .contact-item{
     display: flex;
     align-items: center;
+}
+
+.contact-item:nth-child(n+2)::before{
+    content: "";
+    width: 1px;
+    height: 117px;
+    margin: 0 49px 0 55px;
+    background-image: url(../img/footer-lines.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .contact-wrapper{
@@ -205,7 +228,7 @@ body{
     display: block;
     width: 228px;
     height: 100px;
-    background-image: url(../img/title-arrow.png);
+    background-image: url(../img/title-arrow.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -312,7 +335,7 @@ body{
     content: "";
     width: 228px;
     height: 100px;
-    background-image: url(../img/title-arrow.png);
+    background-image: url(../img/title-arrow.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -404,10 +427,11 @@ body{
     border-radius: 160px;
     background-color: var(--tech-bg-color);
     box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
-    background-image: url(../img/tech-bg.png);
+    background-image: url(../img/tech-bg.webp);
 }
 
 .tech-title{
+    text-align: center;
     margin: 108px 358px 96px 358px;
     width: 577px;
     color: var(--text-color);
@@ -472,7 +496,7 @@ body{
     display: block;
     width: 228px;
     height: 100px;
-    background-image: url(../img/title-arrow.png);
+    background-image: url(../img/title-arrow.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -494,7 +518,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 179px;
-    background-image: url(../img/how-bg.png);
+    background-image: url(../img/how-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -506,7 +530,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/how-pink-bg.png),url(../img/how-black-bg.png);
+    background-image: url(../img/how-pink-bg.webp),url(../img/how-black-bg.webp);
     background-position: center, center;
     background-repeat: no-repeat,no-repeat;
     background-size: 159px, 198px;
@@ -539,7 +563,7 @@ body{
     display: block;
     width: 67px;
     height: 67px;
-    background-image: url(../img/btn-list-arrow.png);
+    background-image: url(../img/btn-list-arrow.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -580,7 +604,7 @@ body{
     margin-top: 30px;
     width: 414px;
     height: 1px;
-    background-image: url(../img/join-line.png);
+    background-image: url(../img/join-line.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -697,7 +721,7 @@ body{
     width: 6px;
     margin: 0 65px 0 ;
     height: 195px;
-    background-image: url(../img/footer-lines.png);
+    background-image: url(../img/footer-lines.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
